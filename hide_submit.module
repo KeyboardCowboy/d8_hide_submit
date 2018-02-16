@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Contains hide_submit.module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\hide_submit\Module\HideSubmit;
+
+/**
+ * Implements hook_form_alter().
+ */
+function hide_submit_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if (/*!HideSubmit::load()->userMayBypass() && */HideSubmit::load()->isActive()) {
+    $form['#attached']['library'][] = 'hide_submit/hide-submit';
+    $form['#attached']['drupalSettings']['hideSubmit'] = HideSubmit::load()->getSettings();
+
+    if (HideSubmit::config()->get('method') === 'indicator') {
+      $form['#attached']['library'][] = 'hide_submit/ladda';
+    }
+  }
+}

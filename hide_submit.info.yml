@@ -1,0 +1,5 @@
+name: 'Hide Submit Button'
+type: module
+description: 'Hides the submit button after a form is submitted to avoid duplicate posting.'
+core: 8.x
+package: 'User Interface'

@@ -1,0 +1,14 @@
+{
+  "name": "drupal/hide_submit",
+  "type": "drupal-module",
+  "description": "Hide Submit Button",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/hide_submit",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/hide_submit",
+    "source": "http://cgit.drupalcode.org/hide_submit"
+  },
+  "require": { }
+}

@@ -1,0 +1,7 @@
+hide_submit.admin:
+  path: '/admin/config/content/hide-submit'
+  defaults:
+    _form: '\Drupal\hide_submit\Form\HideSubmitSettingsForm'
+    _title: 'Hide Submit Button Settings'
+  requirements:
+    _permission: 'administer hide submit'

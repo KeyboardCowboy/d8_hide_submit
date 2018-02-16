@@ -1,0 +1,14 @@
+method: 'disable'
+reset_time: 5000
+disable:
+  abtext: ''
+  atext: ''
+  css: 'hide-submit-disable'
+hide:
+  hide_text: 'Processing...'
+  hide_fx: ''
+  hide_css: 'hide-submit-processing'
+indicator:
+  indicator_style: 'expand-left'
+  spinner_color: '#000'
+  spinner_lines: 12
